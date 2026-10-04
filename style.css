@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: darkblue;
+    color: white;
+}
+
+.nav {
+    padding: 15px;
+    background-color: palegreen;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.nav a {
+    padding: 5px;
+    background-color: darkgoldenrod;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.nav a.active {
+    background-color: red;
+}
+
+.banner {
+    padding: 15px;
+    background-color: lightcoral;
+    height: 325px;
+    background-image: url('./banner1.jpg');
+    background-size: cover;
+    background-position: center;
+
+    animation: slideshow 5s infinite;
+}
+
+
+@keyframes slideshow {
+    0% {
+        background-image: url('./banner1.jpg');
+    }
+    20% {
+        background-image: url('./banner2.jpg');
+    }
+    50% {
+        background-image: url('./banner3.jpg');
+    }
+    75% {
+        background-image: url('./banner4.jpg');
+    }
+    100% {
+        background-image: url('./banner1.jpg');
+    }
+}
+
+
+.intro {
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px black;
+
+    animation: intro 1s infinite;
+}
+
+@keyframes intro {
+    0% {
+        color: white;
+        letter-spacing: 4px;
+        font-size: 32px;
+    }
+    50% {
+        color: blue;
+        letter-spacing: 10px;
+    }
+    100% {
+        color: red;
+        letter-spacing: 4px;
+        font-size: 48px;
+    }
+}
+
+iframe {
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: 15px auto;
+    border: 10px solid white;
+    border-radius: 15px;
+}
+
+
+.profile {
+    padding: 15px;
+    background-color: lightblue;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 50px auto;
+    transition: all 500ms;
+    /* animation: focus 0.75s infinite; */
+}
+
+.profile img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 10px black;
+}
+
+.profile:hover {
+    /* transform: scale(1.2); */
+    width: 500px;
+}
+
+@keyframes focus {
+    0% {
+        transform: scale(1);
+        background-color: lightblue;
+    }
+    100% {
+        transform: scale(1.2);
+        background-color: lightcoral;
+    }
+}
+
+
+.footer {
+    padding: 15px;
+    background-color: lightslategray;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* Site Page */
+#popular-section {
+    padding: 15px;
+    background-color: lightblue;
+}
+
+#rec-section {
+    padding: 15px;
+    background-color: tomato;
+}
+
+.section-title {
+    color: red;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 4px;
+    border-bottom: 5px solid red;
+    width: fit-content;
+    margin: 15px auto;
+}
+
+.province {
+    padding: 15px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.province ol {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.gallery img {
+    width: 225px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 500ms;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Food Page */
+
+
+#famous-food {
+    padding: 15px;
+    background-color: green;
+}
+
+.food-wrapper {
+    padding: 15px;
+    background-color: blue;
+}
+
+.food {
+    padding: 15px;
+    background-color: lightseagreen;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+
+    display: inline-block;
+    margin: 15px;
+
+}
+
+.food img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+
+}
+
+table img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+th, td {
+    border: 2px solid white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+table tr:nth-child(1) {
+    background-color: lightcoral;
+    height: 50px;
+}
+
+/* Culture Page */
+.culture-wrapper {
+    padding: 15px;
+    background-color: darkorange;
+}
+
+.culture-card {
+    padding: 15px;
+    background-color: lightseagreen;
+    height: 300px;
+    text-align: center;
+}
+
+.culture-img {
+    padding: 15px;
+    background-color: brown;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.culture-desc {
+    padding: 15px;
+    background-color: tomato;
+    width: 59%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.culture-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
